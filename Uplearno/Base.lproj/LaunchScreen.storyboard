@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,9 +12,40 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find The right place for your comfort at any time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kq9-9U-7zY">
+                                <rect key="frame" x="0.0" y="248" width="394" height="64.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCyrcle" translatesAutoresizingMaskIntoConstraints="NO" id="DlT-fh-Okb">
+                                <rect key="frame" x="121" y="367.5" width="172" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="K7V-Rc-bzg"/>
+                                    <constraint firstAttribute="height" constant="172" id="Ls0-Wj-0w0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locator" translatesAutoresizingMaskIntoConstraints="NO" id="kYW-7s-Lng">
+                                <rect key="frame" x="139.5" y="384.5" width="135" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="4nN-wH-UxE"/>
+                                    <constraint firstAttribute="height" constant="175" id="vsX-hD-tqs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27843137254901962" green="0.8666666666666667" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DlT-fh-Okb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="444-Qx-RgH"/>
+                            <constraint firstItem="kYW-7s-Lng" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5K8-Rs-3o7"/>
+                            <constraint firstItem="kq9-9U-7zY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6KN-4S-UUA"/>
+                            <constraint firstItem="kYW-7s-Lng" firstAttribute="top" secondItem="kq9-9U-7zY" secondAttribute="bottom" constant="72" id="Dhd-fa-X9s"/>
+                            <constraint firstAttribute="trailing" secondItem="kq9-9U-7zY" secondAttribute="trailing" constant="20" symbolic="YES" id="MGB-0a-JUI"/>
+                            <constraint firstItem="DlT-fh-Okb" firstAttribute="top" secondItem="kq9-9U-7zY" secondAttribute="bottom" constant="55" id="Mh2-9D-7iD"/>
+                            <constraint firstItem="kq9-9U-7zY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="204" id="kot-J1-oJd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +54,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="locator" width="51" height="66"/>
+        <image name="whiteCyrcle" width="65" height="65"/>
+    </resources>
 </document>
